@@ -1,10 +1,12 @@
 import main from '../assets/images/main.svg';
 import Wrapper from '../assets/wrappers/LandingPage';
-import { Logo } from '../components';
+import {Logo} from '../components'
 import { Link } from 'react-router-dom';
 const Landing = () => {
   return (
-    <Wrapper>
+    <>
+     <Wrapper>
+      
       <nav>
         <Logo />
       </nav>
@@ -26,6 +28,8 @@ const Landing = () => {
         <img src={main} alt='job hunt' className='img main-img' />
       </div>
     </Wrapper>
+    </>
+   
   );
 };
 

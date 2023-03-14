@@ -1,8 +1,17 @@
+import {Landing, Register, Error, Dashboard} from './pages'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
   return (
-   <h1>Jobster</h1>
+   <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Dashboard />} />
+      <Route path="landing" element={<Landing />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="*" element={<Error />} />
+    </Routes>
+   </BrowserRouter>
   );
 }
 
