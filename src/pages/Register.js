@@ -2,7 +2,6 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { Logo } from '../components'
 
-console.log('sefsef')
 
 const Register = () => {
   return (
